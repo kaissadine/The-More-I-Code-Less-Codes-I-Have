@@ -2,8 +2,8 @@
 #include <stdlib.h>
 void main()
 {
-    int number, somam = 0, kaunta = 0, op;
-    float numberf, somamf = 0;
+    int number = 0, kaunta = 0, op;
+    float numberf, somam, somamf = 0;
     printf("type 0 for int and 1 for float: ");
     scanf("%d", &op);
     system("cls");
@@ -19,7 +19,8 @@ void main()
             kaunta++;
         } while (number != 0);
         kaunta--;
-        printf("you typed %d numbers and the average number of they is = %d", kaunta, somam);
+    somam=somam/kaunta;
+        printf("you typed %d numbers and the average number of they is = %.2f", kaunta, somam);
         break;
     case 1:
         do
