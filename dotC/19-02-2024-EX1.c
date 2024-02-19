@@ -19,7 +19,7 @@ void main()
             kaunta++;
         } while (number != 0);
         kaunta--;
-    somam=somam/kaunta;
+        somam = somam / kaunta;
         printf("you typed %d numbers and the average number of they is = %.2f", kaunta, somam);
         break;
     case 1:
@@ -32,10 +32,10 @@ void main()
             kaunta++;
         } while (numberf != 0);
         kaunta--;
-        somamf=somamf/kaunta;
+        somamf = somamf / kaunta;
         printf("you typed %d numbers and the average number of they is = %.2f", kaunta, somamf);
         break;
     default:
-        printf("wrong answer");
+        printf("wrong answer restart the program and try again");
     }
 }
